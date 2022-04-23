@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sketch Identification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.6.0/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Sketch Drawing </h1>
+        <br><br>
+        <h3>Complete the sketch within 20 seconds to earn 1 point</h3>
+        <br><br>
+        <label id="sketch" class="btn-success">SKETCH:</label>
+        <br>
+        <label id="score" class="btn-success">SCORE: 0</label>
+        <br>
+        <label id="timer" class="btn-success">TIMER:</label>
+        <h3></h3>
+        <br><br>
+        <label id="prediction">The prediction is</label>
+        <br>
+        <label id="accuracy"></label>
+        <br><br>
+        <button id="clear_canvas" class="btn btn-danger" onclick="clear_canvas()">Clear Canvas</button>
+    </center>
+    <script src="main.js"></script>
+</body>

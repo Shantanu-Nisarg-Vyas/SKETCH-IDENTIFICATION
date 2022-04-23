@@ -1,0 +1,29 @@
+body {
+    background-image: linear-gradient(to top, black, gray);
+}
+
+#prediction {
+    font-size: 30px;
+    color: black;
+}
+
+#accuracy {
+    font-size: 20px;
+    color: black;
+}
+
+canvas {
+    border-radius: 35px;
+    animation-name: canvas_animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes canvas_animation {
+    from{box-shadow: 1px 1px 100px red;}
+    to{box-shadow: 1px 1px 100px yellowgreen;}
+}
+
+#sketch, #timer, #score {
+    font-size: 30px !important;
+}
